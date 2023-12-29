@@ -1,0 +1,84 @@
+.order-summary {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.75rem;
+  height: fit-content;
+}
+
+.summary-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.order-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.order-result {
+  text-align: right;
+}
+
+.order-result--total {
+  margin-top: 1.25rem;
+  font-size: 2.25rem;
+}
+
+.order-total {
+  margin-top: 1.25rem;
+  font-size: 2.25rem;
+}
+
+.action-container {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Skeleton */
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.skeleton-label {
+  width: 80%;
+  height: 16px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.skeleton-container > .order-result {
+  width: 80%;
+  height: 16px;
+  background-color: #ddd;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.skeleton-container > .order-result--total {
+  margin-top: 1.25rem;
+  font-size: 2.25rem;
+}
+
+.skeleton-container > .order-total {
+  font-size: 2.25rem;
+}

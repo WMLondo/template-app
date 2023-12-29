@@ -1,0 +1,59 @@
+/* Pagination.module.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 8rem;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  display: inline-block;
+}
+
+.pagination-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: transparent;
+  outline: none;
+  transition: all 300ms;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.pagination-item--disabled .pagination-link {
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.pagination-item:not(.pagination-item--disabled) .pagination-link {
+  color: #4a5568;
+}
+
+.pagination-item:not(.pagination-item--disabled) .pagination-link:hover {
+  color: #4a5568;
+  background-color: #edf2f7;
+}
+
+.pagination-item--active .pagination-link {
+  background-color: #4299e1;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(66, 153, 225, 0.1),
+    0 2px 4px -1px rgba(66, 153, 225, 0.06);
+}
+
+.pagination-item--active .pagination-link:hover {
+  background-color: #4299e1;
+  color: #fff;
+  box-shadow: 0 6px 6px -1px rgba(66, 153, 225, 0.1),
+    0 3px 5px -1px rgba(66, 153, 225, 0.06);
+}

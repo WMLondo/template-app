@@ -1,0 +1,30 @@
+.container {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sizes-container {
+  display: flex;
+}
+
+.size {
+  border: none;
+  cursor: pointer;
+  background: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.size:hover {
+  text-decoration: underline;
+}
+
+.selected {
+  text-decoration: underline;
+}

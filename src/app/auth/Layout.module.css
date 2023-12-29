@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  padding: 0 2.5rem;
+}
+
+@media (width >= 768px) {
+  .content-container {
+    width: 350px;
+  }
+}

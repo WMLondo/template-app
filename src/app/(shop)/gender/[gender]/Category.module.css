@@ -1,0 +1,17 @@
+.wrapper {
+    min-height: 100vh;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  
+  .title {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (width >= 480px) {
+    .wrapper {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  

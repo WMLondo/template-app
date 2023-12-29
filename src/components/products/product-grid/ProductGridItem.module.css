@@ -1,0 +1,23 @@
+.container {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.link:hover {
+  color: #3182ce;
+}
+
+.price {
+  font-weight: bold;
+}

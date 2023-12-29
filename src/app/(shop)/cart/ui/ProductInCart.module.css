@@ -1,0 +1,84 @@
+.item {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.item-image {
+  margin-right: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Skeleton Design */
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.itemImageSkeleton {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  margin-right: 1.25rem;
+  border-radius: 0.25rem;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleSkeleton {
+  width: 150px;
+  height: 16px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.priceSkeleton {
+  width: 80px;
+  height: 12px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.quantitySelectorSkeleton {
+  width: 60px;
+  height: 16px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+.removeButtonSkeleton {
+  width: 80px;
+  height: 16px;
+  background-color: #ddd;
+  animation: loadingAnimation 1.5s infinite linear;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

@@ -1,0 +1,65 @@
+.container {
+  margin-top: 1.25rem;
+  margin-bottom: 5rem;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 1fr;
+}
+
+.slideshow-container {
+  grid-column: span 1;
+}
+
+.slideshow {
+  display: none;
+}
+
+.slideshow-mobile {
+  display: block;
+  grid-column: span 1;
+}
+
+.content {
+  grid-column: span 1;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.title {
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+
+
+.description {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+.content-description {
+  font-weight: 300;
+}
+
+@media (width >= 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .slideshow-container {
+    grid-column: span 2;
+  }
+
+  .slideshow {
+    display: block;
+  }
+
+  .slideshow-mobile {
+    display: none;
+  }
+}
